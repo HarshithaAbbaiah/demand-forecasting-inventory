@@ -29,3 +29,6 @@ outputs/figures/*.png
 # Environment secrets
 .env
 "@ | Out-File -FilePath .gitignore -Encoding utf8
+
+!data/processed/ca1_foods_features.parquet
+!outputs/lgbm_model.txt
