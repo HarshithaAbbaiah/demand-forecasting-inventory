@@ -1,0 +1,31 @@
+@"
+# Virtual env
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data - ignore contents but keep folder structure
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/figures/*.png
+
+# IDE
+.vscode/
+.idea/
+
+# Environment secrets
+.env
+"@ | Out-File -FilePath .gitignore -Encoding utf8
